@@ -1,0 +1,157 @@
+/* Enter your custom styles here */.marginTopLarger {
+    margin-top: 40px; 
+}
+.sapMListTblRow .sapMCb {
+    display: none;
+}
+.hiddenDiv {
+    display: none !important;
+}
+
+.hiddenBadge {
+    display: none !important;
+}
+.customScrollContainer {
+    height: 300px;
+    width: 100%;
+    overflow-y: scroll; 
+    overflow-x: hidden; 
+    scrollbar-width: thin;
+    scrollbar-color: #B0B0B0 #F5F5F5;
+}
+
+.customScrollContainer::-webkit-scrollbar {
+    width: 8px;
+}
+
+.customScrollContainer::-webkit-scrollbar-track {
+    background: #F5F5F5;
+}
+
+.customScrollContainer::-webkit-scrollbar-thumb {
+    background-color: #B0B0B0;
+    border-radius: 4px;
+}
+
+.customScrollContainer::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+}
+
+
+
+.thin-scrollbar::-webkit-scrollbar {
+    width: 6px;  /* Adjust the width for vertical scrollbar */
+    height: 6px; /* Adjust the height for horizontal scrollbar */
+}
+
+.thin-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #888;  /* Color of the scrollbar thumb */
+    border-radius: 10px;     /* Rounded edges */
+}
+
+.thin-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #555;  /* Color when hovering over the scrollbar */
+}
+
+
+.largeText .sapMInputBaseInner {
+    font-size: 16px; /* Adjust the font size as needed */
+}
+/* Hides the selection checkboxes in the UploadSet component */
+
+.sapMListTblRow .sapMCb {
+    display: none;
+}
+.headerCenter {
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-weight: bold; /* Optional: Makes headers stand out */
+}
+.customVehicleSubSection {
+    height: auto; 
+    max-height: 400px;
+    overflow-y: auto; 
+}
+
+
+.commentHistory {
+    max-height: 600px;
+    padding: 10px;
+}
+
+.chatContainer {
+    overflow: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+.chatList {
+    background-color: #f7f7f7;
+    padding: 10px;
+    overflow-y: auto;
+    height: 100%;
+}
+
+
+.messageContainer {
+    padding: 3px;
+    margin: 10px 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.messageHeader {
+    background-color: #efefef;
+    color: #0e0101;
+    border-radius: 10px;
+    padding: 10px;
+    width: 60%;
+    max-width: 60%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.mahindraMessage {
+    align-self: flex-end;
+    background: linear-gradient(45deg, #ee087f, #dd2a7b, #515bd4);
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+    max-width: 60%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.messageText {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 5px;
+}
+
+
+.messageUser, .messageTime {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.sapMListItems, 
+.sapMLIBSeparator, 
+.sapMLIBBorder, 
+.sapMLIB {
+    border: none !important;
+    box-shadow: none !important; 
+}
+
+.customSpacingTop{
+    margin-top: 40px;
+}
+.customLargeText {
+    font-size: 1.0rem; 
+    font-weight: bold;
+    color: black;
+}
+.customTitleSpacing {
+    margin-bottom: 35px; 
+}
