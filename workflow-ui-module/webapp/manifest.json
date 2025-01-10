@@ -154,8 +154,13 @@
                 "VechicleTable",
                 "comment",
                 "jobTitle",
+                "purchOrg",
+                "purchGroup",
+                "vendorCode",
+                "companyCode",
                 "Department",
                 "TaxId",
+                "sapCustomerId",
                 "Currency",
                 "Language",
                 "Country",
@@ -174,6 +179,16 @@
                     "title": "PO ID",
                     "description": "PO ID"
                 },
+                "sapCustomerId": {
+                    "type": "string",
+                    "title": "Sap Customer Id",
+                    "description": "Sap Customer Id"
+                },
+                "patner": {
+                "type": "array",
+                "title": "patner",
+                "description": "Partner details"
+              },
                 "pouuid": {
                     "type": "string",
                     "title": "PO UUID",
@@ -314,6 +329,26 @@
                     "type": "string",
                     "title": "Grand Total",
                     "description": "Total amount including tax"
+                },
+                "purchOrg": {
+                    "type": "string",
+                    "title": "purchOrg",
+                    "description": "purchOrg"
+                },
+                "purchGroup": {
+                    "type": "string",
+                    "title": "purchGroup",
+                    "description": "purchGroup"
+                },
+                "vendorCode": {
+                    "type": "string",
+                    "title": "vendorCode",
+                    "description": "vendorCode"
+                },
+                "companyCode": {
+                    "type": "string",
+                    "title": "companyCode",
+                    "description": "companyCode"
                 }
             }
         },

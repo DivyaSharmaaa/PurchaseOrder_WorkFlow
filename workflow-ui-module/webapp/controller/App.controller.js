@@ -26,19 +26,14 @@ sap.ui.define([
       // Set the mode to 'None' to disable checkboxes
       oUploadSet.setMode("None");
 
-      // Access the toolbar and modify its content
-      var oUploadButton = sap.ui.getCore().byId("__component1---App--uploadSet-uploader-fu_button");
-      if (oUploadButton) {
-        oUploadButton.setVisible(false); // Hide the button
-
-
-      }
-
-
     },
 
-    onBeforeRendering: async function () {
+ 
 
+    onBeforeRendering: async function () {
+      debugger
+      var uploadSet = this.getView().mAggregations.content[0].mAggregations.pages[0].mAggregations.sections[4].mAggregations._grid.mAggregations.content[0].mAggregations.blocks[0];
+        uploadSet.setUploadButtonInvisible(true);
 
       setTimeout(function () {
         var oView = this.getView();
@@ -148,7 +143,34 @@ sap.ui.define([
           },
         });
       }.bind(this), 1000);
+      
 
+
+
+      setTimeout(function () {
+        var oView = this.getView();
+        var oModel9 = new sap.ui.model.json.JSONModel();
+        debugger;
+    
+        var oData9 = oView.oPropagatedProperties.oModels.context.oData;
+    
+        // Check if filelink exists and is an array
+        if (oData9.patner && Array.isArray(oData9.patner)) {
+            const fileData = oData9.patner;
+    
+            console.log(fileData); // Check if fileData contains the expected array
+    
+            // Set the full array to the model
+            oModel9.setData({ patner: fileData });
+    
+            // Set the model to the view
+            oView.setModel(oModel9, "mydetail");
+    
+            console.log("Model set successfully:", oModel9.getData());
+        } else {
+            console.error("filelink is missing or not an array");
+        }
+    }.bind(this), 1000);
 
 
 
